@@ -1,5 +1,4 @@
 pip == 22.0.3
-pip install --upgrade altair
 streamlit==1.1.0
 plotly==5.1.0
 pandas~=1.5.3
