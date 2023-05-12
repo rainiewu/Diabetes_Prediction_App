@@ -16,6 +16,10 @@ st.write(
 """Description of the model and results"""
 )
 
+st.latex(r'''
+    log \left(\frac{P}{1-P}\right) = \beta_0 + \beta_1 Relative + \beta_2 Sex +\beta_3 Race + \beta_4 Education + \beta_5 Martial + \beta_6 Age + \beta_7 BMI + \beta_8 Exercise
+    ''')
+
 # load dataset 
 dat = pd.read_csv("diabetesdata2.csv")
 diabetes = dat[['diabetes_relative', 'sex', 'ridreth3','excer', 'dmdeduc2', 'dmdmartz', 'ridageyr', 'bmxbmi', 'diabetes']]
