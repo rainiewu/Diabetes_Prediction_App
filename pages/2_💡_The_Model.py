@@ -17,7 +17,7 @@ st.write(
 )
 
 # load dataset 
-dat = pd.read_csv("https://raw.githubusercontent.com/ds4ph-bme/capstone-project-yyingying00/main/diabetesdata2.csv?token=GHSAT0AAAAAAB57EBEKJ7UQDI4R5SYZ3RHIZC5IY7Q")
+dat = pd.read_csv("diabetesdata2.csv")
 diabetes = dat[['diabetes_relative', 'sex', 'ridreth3','excer', 'dmdeduc2', 'dmdmartz', 'ridageyr', 'bmxbmi', 'diabetes']]
 diabetes = diabetes.dropna()
 # rename dataset
@@ -74,7 +74,10 @@ fig = go.Figure()
 fig.add_trace(go.Scatter(x=[0, 1], y=[0, 1], mode='lines', line=dict(dash='dash'), showlegend=False))
 fig.add_trace(go.Scatter(x=fpr, y=tpr, mode='lines', name='ROC curve (AUC = %0.2f)' % roc_auc))
 fig.update_layout(title='Receiver Operating Characteristic (ROC) Curve', xaxis_title='False Positive Rate', yaxis_title='True Positive Rate')
-fig.add_annotation(x=0.6, y=0.2, text=f'AUC = {roc_auc:.2f}', bgcolor='gray', opacity=0.5)
 
 # Show Plotly figure in Streamlit
 st.plotly_chart(fig)
+
+
+
+
