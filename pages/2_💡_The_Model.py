@@ -17,7 +17,8 @@ st.write(
 )
 
 st.latex(r'''
-    log \left(\frac{P}{1-P}\right) = \beta_0 + \beta_1 Relative + \beta_2 Sex +\beta_3 Race + \beta_4 Education + \beta_5 Martial + \beta_6 Age + \beta_7 BMI + \beta_8 Exercise
+    log \left(\frac{P}{1-P}\right) = \beta_0 + \beta_1 Relative + \beta_2 Sex +\beta_3 Race 
+    + \beta_4 Education + \beta_5 Martial + \beta_6 Age + \beta_7 BMI + \beta_8 Exercise
     ''')
 
 # load dataset 
