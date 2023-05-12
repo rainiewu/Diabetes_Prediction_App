@@ -11,8 +11,8 @@ st.markdown("# Play With It")
 st.sidebar.header("Play With It")
 st.write(
 """
-    Answer the survey below by plugging in your info to see what are your chance of getting diabetes!  
-    **Don't worry!** your information would not be saved or shared.
+    Answer the survey below by plugging in your info to see what are your chances of getting diabetes!  
+    **Don't worry!** Your information would not be saved or shared with anyone.
 """
 )
 
@@ -132,6 +132,6 @@ prediction = model_show.predict(new_data)
 st.write("Based on our model, we predict your probability of having diabetes is:")
 st.markdown(f"<h1 style='font-size: 70px;'>{prediction[0] * 100:.2f}%</h1>", unsafe_allow_html=True)
 
-st.write("(Our model is very simple, based on a few lifestyle factors related to diabetes and not including lab data such as fasting blood glucose level. Please see a doctor if you think you may be at risk for diabetes.)")
+st.write("(Our model is very simple, based on a few lifestyle factors related to diabetes and not including lab data such as fasting blood glucose level. Please consult a doctor if you think you may be at risk for diabetes.)")
          
     
