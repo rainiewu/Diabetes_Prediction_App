@@ -130,7 +130,7 @@ model_show = sm.Logit(y_train, x_train).fit()
 
 prediction = model_show.predict(new_data)
 st.write("Based on our model, we predict your probability of having diabetes is:")
-st.write(f"{prediction[0] * 100:.2f}%") 
+st.markdown(f"<h1 style='font-size: 70px;'>{prediction[0] * 100:.2f}%</h1>", unsafe_allow_html=True)
 
 st.write("(Our model is very simple, based on a few lifestyle factors related to diabetes and not including lab data such as fasting blood glucose level. Please see a doctor if you think you may be at risk for diabetes.)")
          
